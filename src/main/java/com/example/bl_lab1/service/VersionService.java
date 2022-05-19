@@ -7,11 +7,11 @@ import com.example.bl_lab1.model.VersionEntity;
 import java.util.List;
 
 public interface VersionService {
-    void saveChangesByAuthorizedUser(String newText, String username, SectionEntity section);
+    void saveChangesByAuthorizedUser(String newText, String username, SectionEntity section) throws Exception;
     void saveChangesByUnauthorizedUser(String newText, SectionEntity section);
     List<VersionEntity> getListOfWaitingUpdates();
     String getTextOfLastUpdateBySection(SectionEntity section);
     String getTextOfLastApprovedVersion(SectionEntity section);
     void approve(Integer id);
-    void decline(Integer id);
+    void decline(Integer id)throws Exception;
 }

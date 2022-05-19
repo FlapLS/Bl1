@@ -1,0 +1,37 @@
+<UsersList>
+    <user>
+        <id>1</id>
+        <login>admin</login>
+        <password>$2a$10$55RFAZDHxCQGvxIr6EiZf.UNsfxl5/kYbe6nlw1dzXpt8Ucwxble.</password>
+        <lastName>admin</lastName>
+        <firstName>admin</firstName>
+        <role>ADMIN</role>
+    </user>
+
+    <user>
+        <id>2</id>
+        <login>user</login>
+        <password>$2a$10$C3VNImTZwT61G2XZtlS5CeM9xcGKLYifcYmxTx13cF7bMHrlQIF9e</password>
+        <lastName>user</lastName>
+        <firstName>user</firstName>
+        <role>USER</role>
+    </user>
+
+    <user>
+        <id>3</id>
+        <login>anonymous</login>
+        <password>$2a$10$jy/ku7fdWEPPEB9f2hafmuDItiSW0FaBnTNL9CNfV8O3lHbNsQ0Pq</password>
+        <lastName>anonymous</lastName>
+        <firstName>anonymous</firstName>
+        <role>ANONYMOUS</role>
+    </user>
+
+    <user>
+        <id>4</id>
+        <login>usertest</login>
+        <password>$2a$10$C3VNImTZwT61G2XZtlS5CeM9xcGKLYifcYmxTx13cF7bMHrlQIF9e</password>
+        <lastName>us</lastName>
+        <firstName>use</firstName>
+        <role>USER</role>
+    </user>
+</UsersList>

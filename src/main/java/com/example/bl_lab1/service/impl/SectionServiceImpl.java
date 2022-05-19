@@ -3,15 +3,20 @@ package com.example.bl_lab1.service.impl;
 import com.example.bl_lab1.model.SectionEntity;
 import com.example.bl_lab1.repositories.SectionRepo;
 import com.example.bl_lab1.service.SectionService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class SectionServiceImpl implements SectionService {
-    private final SectionRepo repo;
+    private SectionRepo repo;
 
-    public SectionServiceImpl(SectionRepo repo) {
+    @Autowired
+    public void setSectionRepo(SectionRepo repo){
         this.repo = repo;
     }
+//    public SectionServiceImpl(SectionRepo repo) {
+//        this.repo = repo;
+//    }
 
     @Override
     public String getSectionCodeByArticleIdAndIndex(Integer articleId, Integer index) {
